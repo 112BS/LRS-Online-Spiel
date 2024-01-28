@@ -73,6 +73,21 @@ input[type=text] {
     <center><h1>Wähle das Symbol was auf der Karte ist!</h1></center>
     <center><input type="text" placeholder="Wie ist dein Name? (nix machen funktionieren!)"></center>
     <center><button class="backbutton" onclick="window.location.href='index.html';">Zurück ◀</button></center>
+    <button onclick="openFullscreen();">Vollbild</button>
+
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+
     <br>
     <center>
     <button class="button"onclick="window.location.href='q1c.html';">🏬</button>
