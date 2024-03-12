@@ -16,14 +16,25 @@
         margin: 0px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    button{
-      font-size: 50px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+     .btn {
+  background-color: rgb(230, 248, 255);
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 128px;
+  margin: 8px 4px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #076b0a;
+  color: white;
 </style>
 <body>
     <center><h1>Tutorial</h1>
-    <button onclick="window.location.href='index.html';">Zurück</button>
+    <button class"btn" onclick="window.location.href='index.html';">Zurück</button>
         <p>Höre dir die Anleitung an!</p>
     <audio controls>
   <source src="erklärung.mp3" type="audio/mpeg">
